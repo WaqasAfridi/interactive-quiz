@@ -14,9 +14,61 @@ body {
 
 main {
   height: auto;
-  width: 600px;
+  width: 800px;
 }
 
+.landing-page {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.banner-heading {
+  font-size: 45px;
+  line-height: 55px;
+  color: green;
+}
+
+.instuctions {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(0, 171, 186);
+}
+
+button.start-quiz {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+button.start-quiz:hover {
+  scale: calc(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button.start-quiz:active {
+  scale: calc(1.03);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: rgb(2, 149, 2);
+}
+
+/*=========== QUIZ SECTION ============*/
 .quiz-box {
   height: 700px;
   width: 100%;
@@ -130,8 +182,52 @@ main {
   margin: 50px 0px;
 }
 
+.result-box .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .result-box h2 {
-  text-align: center;
+  text-align: left;
+  font-size: 40px;
+  color:#1d925a;
+  flex: 1.8;
+  padding-top: 10px;
+}
+
+.result-box .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+
+button.restart-quiz,
+button.home-btn {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color:green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+button.restart-quiz:hover,
+button.home-btn:hover {
+  scale: calc(1.02);
+  box-shadow: 2px -2px 7px rgba(0, 0, 0, 0.15);
+}
+
+button.restart-quiz:active,
+button.home-btn:active {
+  scale: calc(1.01);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: rgb(2, 149, 2);
 }
 
 .statistics {

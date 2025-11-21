@@ -3,7 +3,22 @@ import { Questions } from "./questions.js";
 // index of Questions array
 let questionIndex = 0;
 
-function resetSelection() {
+function resetUserInteractivity() {
+  Questions.forEach((Ques, index) => {
+    Ques.userChoice = "";
+    Ques.options.forEach((opt, i) => {
+      document.querySelector(`.option${i}-btn`).classList.remove("selected");
+      if (
+        Questions[questionIndex].userChoice ===
+        document.querySelector(`.option${i}`).innerText
+      ) {
+        document.querySelector(`.option${i}-btn`).classList.add("selected");
+      }
+    });
+  });
+}
+
+function changeSelectedOption() {
   for (let i = 0; i < 4; i++) {
     document.querySelector(`.option${i}-btn`).classList.remove("selected");
     if (
@@ -35,7 +50,7 @@ function renderQuiz() {
     optionBtn.addEventListener("click", () => {
       let userChoice = optionContent.innerText;
       Questions[questionIndex].userChoice = userChoice;
-      resetSelection();
+      changeSelectedOption();
     });
   });
 }
@@ -87,7 +102,7 @@ previousBtn.addEventListener("click", () => {
   if (questionIndex > 0) {
     questionIndex--;
     renderQuiz();
-    resetSelection();
+    changeSelectedOption();
   }
 });
 
@@ -95,7 +110,7 @@ nextBtn.addEventListener("click", () => {
   if (questionIndex < Questions.length - 1) {
     questionIndex++;
     renderQuiz();
-    resetSelection();
+    changeSelectedOption();
   }
 });
 
@@ -233,3 +248,24 @@ function renderResultBox() {
   highlightSelectedOptions();
   chooseFeedbackNotification();
 }
+
+const startQuizBtn = document.querySelector(".start-quiz");
+startQuizBtn.addEventListener("click", () => {
+  document.querySelector(".landing-page").style.display = "none";
+  document.querySelector(".quiz-box").style.display = "flex";
+  renderQuiz();
+});
+
+const homeBtn = document.querySelector(".home-btn");
+homeBtn.addEventListener("click", () => {
+  document.querySelector(".result-box").style.display = "none";
+  document.querySelector(".landing-page").style.display = "flex";
+  resetUserInteractivity();
+});
+
+const restartQuizBtn = document.querySelector(".restart-quiz");
+restartQuizBtn.addEventListener("click", () => {
+  document.querySelector(".result-box").style.display = "none";
+  document.querySelector(".quiz-box").style.display = "flex";
+  resetUserInteractivity();
+});
