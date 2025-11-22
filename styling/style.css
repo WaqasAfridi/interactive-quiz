@@ -10,14 +10,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 main {
-  height: 100vh;
-  width: 800px;
+  max-width: 800px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .landing-page {
@@ -73,10 +75,8 @@ button.start-quiz:active {
 
 /*=========== QUIZ SECTION ============*/
 .quiz-box {
-  height: 100%;
+  height: 100vh;
   width: 90%;
-  margin-top: 10%;
-  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,8 +240,12 @@ button.start-quiz:active {
 
 .result-box {
   display: none;
-  margin: 50px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px;
   height: 100%;
+  width: 100%;
 }
 
 .result-box .header {
@@ -254,15 +258,14 @@ button.start-quiz:active {
   text-align: left;
   font-size: 40px;
   color: #1d925a;
-  flex: 1.8;
   padding-top: 10px;
 }
 
 .result-box .navigation-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  flex: 1;
+  column-gap: 10px;
 }
 
 button.restart-quiz,
@@ -270,6 +273,7 @@ button.home-btn {
   font-size: 15px;
   font-weight: 500;
   padding: 10px 20px;
+  width: 175px;
   border-radius: 5px;
   background-color: green;
   color: white;
@@ -294,7 +298,7 @@ button.home-btn:active {
 .statistics {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px 0;
   width: 100%;
   padding: 10px;
@@ -333,7 +337,6 @@ button.home-btn:active {
 }
 
 .virtual-statistics {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
   text-align: center;

@@ -1,0 +1,40 @@
+@media (max-width: 630px) and (min-width: 577px) {
+  .result-box .header {
+    align-items: center;
+    flex-direction: column;
+  }
+  .result-box .navigation-buttons {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 0px) {
+  .result-box .header {
+    align-items: center;
+    flex-direction: column;
+  }
+  .result-box .navigation-buttons {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5px;
+  }
+  .statistics {
+    flex-direction: column-reverse;
+    row-gap: 60px;
+  }
+  .accuracy-text {
+    bottom: -45%;
+    font-size: 20px;
+  }
+  .stat-data {
+    flex: 1;
+  }
+  .text-statistics {
+    width: 100%;
+  }
+  .stat-data-detail {
+    width: 100%;
+  }
+}
