@@ -1,0 +1,70 @@
+@media (max-width: 574px) and (min-width: 480px) {
+  .instuctions {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 466px) {
+  .banner-heading {
+    font-size: 39px;
+    line-height: 55px;
+  }
+  .instuctions {
+    font-size: 20px;
+  }
+}
+@media (max-width: 465px) and (min-width: 422px) {
+  .banner-heading {
+    font-size: 38px;
+    line-height: 53px;
+  }
+}
+@media (max-width: 421px) and (min-width: 413px) {
+  .banner-heading {
+    font-size: 37px;
+    line-height: 51px;
+  }
+  .instuctions {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 412px) and (min-width: 405px) {
+  .banner-heading {
+    font-size: 36px;
+    line-height: 51px;
+  }
+}
+@media (max-width: 404px) and (min-width: 396px) {
+  .banner-heading {
+    font-size: 35px;
+    line-height: 51px;
+  }
+}
+@media (max-width: 395px) and (min-width: 388px) {
+  .banner-heading {
+    font-size: 34px;
+    line-height: 49px;
+  }
+  .instuctions {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 387px) and (min-width: 354px) {
+  .banner-heading {
+    font-size: 30px;
+    line-height: 47px;
+  }
+  .instuctions {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 353px) and (min-width: 0px) {
+  .banner-heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

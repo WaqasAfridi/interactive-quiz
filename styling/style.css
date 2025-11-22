@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
@@ -23,7 +23,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -191,18 +191,17 @@ button.start-quiz:active {
 .result-box h2 {
   text-align: left;
   font-size: 40px;
-  color:#1d925a;
+  color: #1d925a;
   flex: 1.8;
   padding-top: 10px;
 }
 
 .result-box .navigation-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
 }
-
 
 button.restart-quiz,
 button.home-btn {
@@ -210,7 +209,7 @@ button.home-btn {
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color:green;
+  background-color: green;
   color: white;
   border: none;
   cursor: pointer;
