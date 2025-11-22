@@ -203,8 +203,7 @@ button.start-quiz:active {
 .quiz-footer-buttons button.previous-btn:hover {
   background-color: rgba(0, 0, 0, 0.741);
   color: white;
-  box-shadow: none
-  ;
+  box-shadow: none;
 }
 
 .quiz-footer-buttons button.previous-btn:active {
@@ -225,7 +224,7 @@ button.start-quiz:active {
 }
 
 .quiz-footer-buttons button.submit-btn:hover {
-  background-color:#318fe9;
+  background-color: #318fe9;
   color: white;
   box-shadow: none;
 }
@@ -450,122 +449,4 @@ hr {
   font-size: 15px;
   margin-left: 8px;
   line-height: 10px;
-}
-
-@media (max-width: 675px) and (min-width: 583px) {
-  .quiz-box h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .quiz-box .options button {
-    font-size: 17px;
-  }
-  .quiz-box .options button:hover {
-    font-size: 18px;
-  }
-
-  .quiz-box .options button.selected {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 582px) and (min-width: 545px) {
-  .quiz-box h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .quiz-box .options button {
-    font-size: 15px;
-  }
-  .quiz-box .options button:hover {
-    font-size: 16px;
-  }
-
-  .quiz-box .options button.selected {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 544px) and (min-width: 500px) {
-  .quiz-box h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .quiz-box .options button {
-    font-size: 13px;
-  }
-  .quiz-box .options button:hover {
-    font-size: 14px;
-  }
-
-  .quiz-box .options button.selected {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 500px) and (min-width: 456px) {
-  .quiz-box h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .quiz-box .options button {
-    font-size: 13px;
-    line-height: 40px;
-  }
-  .quiz-box .options button:hover {
-    font-size: 14px;
-  }
-
-  .quiz-box .options button.selected {
-    font-size: 14px;
-  }
-  .quiz-box .options button.selected .selected-feedback {
-    font-size: 10px;
-    padding: 0 8px;
-    line-height: 20px;
-    border-radius: 15px;
-    top: 11px;
-  }
-  .quiz-box .options button.selected .option-alphabet {
-    width: 45px;
-    line-height: 42px;
-  }
-  .quiz-box .options button .option-alphabet {
-    width: 45px;
-    line-height: 42px;
-  }
-}
-
-@media (max-width: 456px) and (min-width: 0px) {
-  .quiz-box h2 {
-    font-size: 19px;
-    line-height: 25px;
-  }
-  .quiz-box .options button {
-    font-size: 10px;
-    line-height: 40px;
-  }
-  .quiz-box .options button:hover {
-    font-size: 11px;
-  }
-
-  .quiz-box .options button.selected {
-    font-size: 11px;
-  }
-  .quiz-box .options button.selected .selected-feedback {
-    font-size: 8px;
-    padding: 0 5px;
-    line-height: 20px;
-    border-radius: 15px;
-    top: 12px;
-    right: 5px;
-  }
-  .quiz-box .options button.selected .option-alphabet {
-    width: 45px;
-    line-height: 42px;
-  }
-  .quiz-box .options button .option-alphabet {
-    width: 45px;
-    line-height: 42px;
-  }
 }
