@@ -20,6 +20,10 @@
     justify-content: space-evenly;
     padding: 5px;
   }
+  .button.restart-quiz,
+  button.home-btn {
+  padding: 10px 0;
+  }
   .statistics {
     flex-direction: column-reverse;
     row-gap: 60px;
