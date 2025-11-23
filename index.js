@@ -106,9 +106,7 @@ function renderProgressline() {
   let answered = countAnswered();
   const progressLine = document.querySelector(".progress-fill");
   const progressText = document.querySelector(".progress-text");
-  let progressPercentage = Math.round(
-    (answered / Questions.length) * 99.6
-  );
+  let progressPercentage = Math.round((answered / Questions.length) * 99.6);
   progressLine.style.width = `${progressPercentage}%`;
   progressText.innerText = `${answered} / ${Questions.length}`;
   if (progressPercentage < 45) {
@@ -286,15 +284,20 @@ startQuizBtn.addEventListener("click", () => {
 
 const homeBtn = document.querySelector(".home-btn");
 homeBtn.addEventListener("click", () => {
+  questionIndex = 0;
+  renderQuiz();
+  resetUserInteractivity();
+  renderProgressline();
   document.querySelector(".result-box").style.display = "none";
   document.querySelector(".landing-page").style.display = "flex";
-  resetUserInteractivity();
 });
 
 const restartQuizBtn = document.querySelector(".restart-quiz");
 restartQuizBtn.addEventListener("click", () => {
-  document.querySelector(".result-box").style.display = "none";
-  document.querySelector(".quiz-box").style.display = "flex";
+  questionIndex = 0;
+  renderQuiz();
   resetUserInteractivity();
   renderProgressline();
+  document.querySelector(".result-box").style.display = "none";
+  document.querySelector(".quiz-box").style.display = "flex";
 });

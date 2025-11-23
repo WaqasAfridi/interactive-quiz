@@ -50,6 +50,9 @@
 }
 
 @media (max-width: 500px) and (min-width: 456px) {
+  .progress-title {
+    font-size: 16px;
+  }
   .quiz-box h2 {
     font-size: 25px;
     line-height: 30px;
@@ -83,6 +86,9 @@
 }
 
 @media (max-width: 456px) and (min-width: 0px) {
+  .progress-title {
+    font-size: 14px;
+  }
   .quiz-box h2 {
     font-size: 19px;
     line-height: 25px;
