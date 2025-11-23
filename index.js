@@ -70,7 +70,7 @@ function AnsweredofTotal() {
       answeredCount++;
     }
   });
-  return `${answeredCount}/${Questions.length}`;
+  return `${answeredCount} / ${Questions.length}`;
 }
 
 function correctlyAnswered() {
@@ -80,7 +80,7 @@ function correctlyAnswered() {
       correctAnsweredCount++;
     }
   });
-  return `${correctAnsweredCount}/${Questions.length}`;
+  return `${correctAnsweredCount} / ${Questions.length}`;
 }
 
 function acurracyPercentage() {
