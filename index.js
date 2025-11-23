@@ -120,6 +120,20 @@ const previousBtn = document.querySelector(".previous-btn");
 const nextBtn = document.querySelector(".next-btn");
 const submitBtn = document.querySelector(".submit-btn");
 
+function viewAndHideQuizButtons(){
+  if (questionIndex == 0){
+    previousBtn.style.display = 'none';
+  }else{
+    previousBtn.style.display = 'block';
+  }
+
+  if (questionIndex == Questions.length-1){
+    nextBtn.style.display = 'none';
+  }else{
+    nextBtn.style.display = 'block';
+  }
+} 
+
 // Quiz Footer Buttons interactivity
 previousBtn.addEventListener("click", () => {
   if (questionIndex > 0) {
@@ -127,6 +141,7 @@ previousBtn.addEventListener("click", () => {
     renderQuiz();
     changeSelectedOption();
     renderProgressline();
+    viewAndHideQuizButtons()
   }
 });
 
@@ -136,6 +151,7 @@ nextBtn.addEventListener("click", () => {
     renderQuiz();
     changeSelectedOption();
     renderProgressline();
+    viewAndHideQuizButtons()
   }
 });
 
@@ -280,6 +296,7 @@ startQuizBtn.addEventListener("click", () => {
   document.querySelector(".quiz-box").style.display = "flex";
   renderQuiz();
   renderProgressline();
+  viewAndHideQuizButtons()
 });
 
 const homeBtn = document.querySelector(".home-btn");
@@ -298,6 +315,7 @@ restartQuizBtn.addEventListener("click", () => {
   renderQuiz();
   resetUserInteractivity();
   renderProgressline();
+  viewAndHideQuizButtons()
   document.querySelector(".result-box").style.display = "none";
   document.querySelector(".quiz-box").style.display = "flex";
 });
