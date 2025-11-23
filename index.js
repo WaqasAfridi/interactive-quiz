@@ -129,6 +129,9 @@ function viewAndHideQuizButtons(){
 
   if (questionIndex == Questions.length-1){
     nextBtn.style.display = 'none';
+    submitBtn.style.background = '#318fe9';
+    submitBtn.style.color = 'white';
+    submitBtn.style.border = 'none';
   }else{
     nextBtn.style.display = 'block';
   }
