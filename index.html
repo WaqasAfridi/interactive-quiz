@@ -3,82 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/owv2wss.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/owv2wss.css" />
     <link rel="stylesheet" href="./styling/style.css" />
-    <link rel="stylesheet" href="./styling/landing-page-responsiveness.css">
-    <link rel="stylesheet" href="./styling/quiz-page-responsiveness.css">
-    <link rel="stylesheet" href="./styling/result-page-responsiveness.css">
+    <link rel="stylesheet" href="./styling/landing-page-responsiveness.css" />
+    <link rel="stylesheet" href="./styling/quiz-page-responsiveness.css" />
+    <link rel="stylesheet" href="./styling/result-page-responsiveness.css" />
     <title>Interactive Quiz</title>
   </head>
   <body>
     <main>
-        <section class="landing-page">
-            <img class="banner-image" src="images/erasebg-transformed (1).png" alt="" class="banner-image">
-            <h1 class="banner-heading">Get Ready for an Exciting Quiz Adventure!</h1>
-            <p class="instuctions">Start your quiz by clicking the button below. You can change your answers anytime before submitting. Click submit only when you're ready to see your results.</p>
-            <button class="start-quiz">Start Quiz</button>
-        </section>
+      <section class="landing-page">
+        <img
+          class="banner-image"
+          src="images/erasebg-transformed (1).png"
+          alt=""
+          class="banner-image"
+        />
+        <h1 class="banner-heading">
+          Get Ready for an Exciting Quiz Adventure!
+        </h1>
+        <p class="instuctions">
+          Start your quiz by clicking the button below. You can change your
+          answers anytime before submitting. Click submit only when you're ready
+          to see your results.
+        </p>
+        <button class="start-quiz">Start Quiz</button>
+      </section>
       <section class="quiz-box">
         <div class="quiz-status">
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
-                <div class="progress-text">2/7</div>
-            </div>
-            <div class="timer"></div>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-text">2/7</div>
+          </div>
+          <div class="timer"></div>
         </div>
         <div class="question-and-options">
-            <h2 class="question">
-            </h2>
-            <div class="options">
-            <button class="option0-btn"><span class="option-alphabet">A</span><span class="option-text option0"></span></span><span class="selected-feedback"><i class="fas fa-check-circle"></i> Selected</span></button>
-            <button class="option1-btn"><span class="option-alphabet">B</span><span class="option-text option1"></span></span><span class="selected-feedback"><i class="fas fa-check-circle"></i> Selected</span></button>
-            <button class=" option2-btn"><span class="option-alphabet">C</span><span class="option-text option2"></span><span class="selected-feedback"><i class="fas fa-check-circle"></i> Selected</span></button>
-            <button class="option3-btn"><span class="option-alphabet">D</span><span class="option-text option3"></span></span><span class="selected-feedback"><i class="fas fa-check-circle"></i> Selected</span></button>
-            </div>
+          <h2 class="question"></h2>
+          <div class="options">
+            <button class="option0-btn">
+              <span class="option-alphabet">A</span>
+              <span class="option-text option0"></span>
+              <span class="selected-feedback">
+                <i class="fas fa-check-circle"></i>
+                Selected
+              </span>
+            </button>
+            <button class="option1-btn">
+              <span class="option-alphabet">A</span>
+              <span class="option-text option1"></span>
+              <span class="selected-feedback">
+                <i class="fas fa-check-circle"></i>
+                Selected
+              </span>
+            </button>
+            <button class="option2-btn">
+              <span class="option-alphabet">A</span>
+              <span class="option-text option2"></span>
+              <span class="selected-feedback">
+                <i class="fas fa-check-circle"></i>
+                Selected
+              </span>
+            </button>
+            <button class="option3-btn">
+              <span class="option-alphabet">A</span>
+              <span class="option-text option3"></span>
+              <span class="selected-feedback">
+                <i class="fas fa-check-circle"></i>
+                Selected
+              </span>
+            </button>
+          </div>
         </div>
         <div class="quiz-footer-buttons">
-            <button class="previous-btn">Previous</button>
-            <button class="next-btn">Next</button>
-            <button class="submit-btn">Submit</button>
+          <button class="previous-btn">Previous</button>
+          <button class="next-btn">Next</button>
+          <button class="submit-btn">Submit</button>
         </div>
       </section>
       <section class="result-box">
         <div class="header">
-            <h2>Quiz Result</h2>
-            <div class="navigation-buttons">
-                <button class="home-btn"><i class="fas fa-home" style="margin-right: 8px;"></i> Back to HOME</button>
-                <button class="restart-quiz"><i class="fas fa-sync-alt" style="margin-right: 8px;"></i> Restart Quiz</button>
-            </div>
+          <h2>Quiz Result</h2>
+          <div class="navigation-buttons">
+            <button class="home-btn">
+              <i class="fas fa-home" style="margin-right: 8px"></i> Back to HOME
+            </button>
+            <button class="restart-quiz">
+              <i class="fas fa-sync-alt" style="margin-right: 8px"></i> Restart
+              Quiz
+            </button>
+          </div>
         </div>
         <div class="statistics">
-            <div class="text-statistics">
-                <div class="stat-titles">
-                    <div class="stat-title-data date">Date :</div>
-                    <div class="stat-title-data time">Time :</div>
-                    <div class="stat-title-data duration">Duration :</div>
-                    <div class="stat-title-data answered">Answered :</div>
-                    <div class="stat-title-data correct">correct :</div>
-                </div>
-                <div class="stat-data">
-                    <div class="stat-data-detail date-data"></div>
-                    <div class="stat-data-detail time-data"></div>
-                    <div class="stat-data-detail duration-data">1 Min - 20 sec</div>
-                    <div class="stat-data-detail answered-data"></div>
-                    <div class="stat-data-detail correctly-answered-data"></div>
-                    </div>
+          <div class="text-statistics">
+            <div class="stat-titles">
+              <div class="stat-title-data date">Date :</div>
+              <div class="stat-title-data time">Time :</div>
+              <div class="stat-title-data duration">Duration :</div>
+              <div class="stat-title-data answered">Answered :</div>
+              <div class="stat-title-data correct">correct :</div>
             </div>
-            <div class="virtual-statistics">
-                <div class="accuracy">
-                    <div class="accuracy-percentage"></div>
-                    <div class="accuracy-text">Accuracy</div>
-                </div>
-                
+            <div class="stat-data">
+              <div class="stat-data-detail date-data"></div>
+              <div class="stat-data-detail time-data"></div>
+              <div class="stat-data-detail duration-data">1 Min - 20 sec</div>
+              <div class="stat-data-detail answered-data"></div>
+              <div class="stat-data-detail correctly-answered-data"></div>
             </div>
+          </div>
+          <div class="virtual-statistics">
+            <div class="accuracy">
+              <div class="accuracy-percentage"></div>
+              <div class="accuracy-text">Accuracy</div>
+            </div>
+          </div>
         </div>
-        <div class="question-container">
-        </div>
-    </section>
+        <div class="question-container"></div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.19/dayjs.min.js"></script>
     <script src="index.js" type="module"></script>
