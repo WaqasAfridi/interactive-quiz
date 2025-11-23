@@ -51,6 +51,7 @@ function renderQuiz() {
       let userChoice = optionContent.innerText;
       Questions[questionIndex].userChoice = userChoice;
       changeSelectedOption();
+      renderProgressline();
     });
   });
 }
@@ -92,6 +93,30 @@ function acurracyPercentage() {
   return `${Math.round((correctAnsweredCount / Questions.length) * 100)}%`;
 }
 
+function countAnswered() {
+  let answered = 0;
+  Questions.forEach((Ques) => {
+    if (Ques.userChoice != "") {
+      answered++;
+    }
+  });
+  return answered;
+}
+function renderProgressline() {
+  let answered = countAnswered();
+  const progressLine = document.querySelector(".progress-fill");
+  const progressText = document.querySelector(".progress-text");
+  let progressPercentage = Math.round(
+    (answered / Questions.length) * 99.6
+  );
+  progressLine.style.width = `${progressPercentage}%`;
+  progressText.innerText = `${answered} / ${Questions.length}`;
+  if (progressPercentage < 45) {
+    progressText.style.color = "green";
+  } else {
+    progressText.style.color = "yellow";
+  }
+}
 // Quiz Footer Buttons
 const previousBtn = document.querySelector(".previous-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -103,6 +128,7 @@ previousBtn.addEventListener("click", () => {
     questionIndex--;
     renderQuiz();
     changeSelectedOption();
+    renderProgressline();
   }
 });
 
@@ -111,6 +137,7 @@ nextBtn.addEventListener("click", () => {
     questionIndex++;
     renderQuiz();
     changeSelectedOption();
+    renderProgressline();
   }
 });
 
@@ -254,6 +281,7 @@ startQuizBtn.addEventListener("click", () => {
   document.querySelector(".landing-page").style.display = "none";
   document.querySelector(".quiz-box").style.display = "flex";
   renderQuiz();
+  renderProgressline();
 });
 
 const homeBtn = document.querySelector(".home-btn");
@@ -268,4 +296,5 @@ restartQuizBtn.addEventListener("click", () => {
   document.querySelector(".result-box").style.display = "none";
   document.querySelector(".quiz-box").style.display = "flex";
   resetUserInteractivity();
+  renderProgressline();
 });
